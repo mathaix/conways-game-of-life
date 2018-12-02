@@ -11,13 +11,17 @@ import initializer
 #
 class GameofLife(object):   
     # Initialize the Game with Dimensions of the View Area
-    def __init__(self, x, y, initializer_key):
-        self.x = int(x/2)
+    def __init__(self, x, y, initializer_key=None):
+        if x % 2 == 0:
+          self.x = int(x/2)
+        else:
+            self.x = int(x/2) + 1
         self.y = y
         self.data = [0]* self.x * self.y    # State of each cell is stored in Array of size x*y. 
         
-        initializer.initializers[initializer_key](self).initialize()
-        
+        if initializer_key:
+            initializer.initializers[initializer_key](self).initialize()
+
     # Traverse each point in the grid and update each cell
     def update(self):
         # Capture state changes in a temporary buffer, because updating self.data directly 
@@ -86,3 +90,14 @@ class GameofLife(object):
                 self.get_cell_state( x - 1 , y  + 1) + \
                 self.get_cell_state( x  , y + 1) +  \
                 self.get_cell_state( x + 1 , y + 1)
+
+    def get_initialize_text(self):
+        initializer_text = []
+        for key, value in initializer.initializers.items(): 
+            initializer_text.append ("%s for %s" % (key,value.desc()))
+
+        initializer_text.append('and q to Quit')
+        return 'Press: ' + ', '.join(initializer_text)
+
+    def get_initialize_keys(self):
+        return [key for key in initializer.initializers.keys()]

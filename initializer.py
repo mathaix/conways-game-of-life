@@ -18,8 +18,9 @@ class Toad(Initializer):
       self.gol.set_cellState(i+1,j+1,1)
       self.gol.set_cellState(i+2,j+1,1)
 
-  def __str__(self):
-      return "b for Behive"
+  @staticmethod
+  def desc():
+      return "Toad"
 
 class Behive(Initializer):
   def initialize(self):
@@ -34,8 +35,9 @@ class Behive(Initializer):
       self.gol.set_cellState(i+1,j+2,1)
       self.gol.set_cellState(i+2,j+2,1)
 
-  def __str__(self):
-      return "b for Behive"
+  @staticmethod
+  def desc():
+      return "Behive"
 
 class Glider(Initializer):
   def initialize(self):
@@ -49,9 +51,9 @@ class Glider(Initializer):
       self.gol.set_cellState(i+2,j+1,1)
       self.gol.set_cellState(i+1,j+2,1)
 
-  def __str__(self):
-      return "g for Glider"
-
+  @staticmethod
+  def desc():
+      return "Glider"
 
 class Random(Initializer):
   def initialize(self):
@@ -63,8 +65,9 @@ class Random(Initializer):
         shape = shapes[random.randint(0,len(shapes)-1)]
         shape(self.gol).initialize()
 
-  def __str__(self):
-      return "r for Random"
+  @staticmethod
+  def desc():
+      return "Random"
 
 initializers = {
             'g' : Glider, 

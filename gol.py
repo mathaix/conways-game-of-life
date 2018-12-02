@@ -29,8 +29,9 @@ class GameController(object):
         self._status = urwid.Text( ('red',u""))
         cols, rows = urwid.raw_display.Screen().get_cols_rows()
         self.x = cols 
-        self.y = rows-5
+        self.y = rows - 5
         self._gridbox = urwid.Text('')
+        self.game  = GameofLife(self.x, self.y, None)
         self.initialize()
         self.animate_alarm = None
         self.set_footer()
@@ -45,10 +46,13 @@ class GameController(object):
 
     def initialize(self):
         self.state = 1
-        self._gridbox.set_text(('black',['. ']* int(self.x/2) * self.y))
+        self._gridbox.set_text(('black',['. ']* self.game.x * self.game.y))
 
     def set_footer(self):
-        self._status.set_text(('red',STATES[self.state]))
+        if self.state == 1:
+            self._status.set_text(('red',self.game.get_initialize_text()))
+        else:
+            self._status.set_text(('red',STATES[self.state]))
 
     def on_start(self):
         self.state = 2
@@ -80,7 +84,7 @@ class GameController(object):
     def manage_state(self, key):
         if self.is_initialized():
           """ Initialize Game """
-          if key in ('s', 'g', 'r'): self.game  = GameofLife(self.x, self.y, key)
+          if key in self.game.get_initialize_keys(): self.game  = GameofLife(self.x, self.y, key)
           else: self.game  = GameofLife(self.x, self.y, 'r')
           self.on_start()
         if self.is_running() and key in ('p'):
@@ -97,6 +101,7 @@ class GameController(object):
         self.game.update()
         self._gridbox.set_text(self.game.get_data())
     
+    # Program ticker
     def animate(self, loop=None, user_data=None):
         """update the graph and schedule the next update"""
         if self.state == 2:
