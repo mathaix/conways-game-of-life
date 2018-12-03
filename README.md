@@ -46,3 +46,19 @@ model.py - All the logic for applying the different Game of Life Rules and Keepi
 initializer.py - Initializers contain different shapes, which can be used to initialize the Game of Life grid, when it starts up.
 
 ### Modifying the Program
+
+Ideas to try:
+
+Modify the rules to implement HighLife https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)
+
+
+Create other shapes
+
+https://en.wikipedia.org/wiki/Still_life_(cellular_automaton)
+https://en.wikipedia.org/wiki/Oscillator_(cellular_automaton)
+
+
+Use a sparser memory structure
+
+
+
