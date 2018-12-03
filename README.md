@@ -20,10 +20,10 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
 (Note this program may not run on windows)
 
 1. Install Prequiste software
-      Python3: Python3 can be download and installed from here https://www.python.org/downloads/
+      **Python3:** Python3 can be download and installed from here https://www.python.org/downloads/
       For more detailed instructions see: https://realpython.com/installing-python
 
-      Git: 
+      **Git:** 
       Most systems already come installed with Git. 
       To check if git is installed, open a terminal and type git. 
       For instructions to install see https://www.atlassian.com/git/tutorials/install-git
@@ -32,28 +32,36 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
    It already comes intalled with python3, git and urwid
 
 3. Clone the repository:
-   git clone https://github.com/kenzanlabs/conways-game-of-life.git
+```
+git clone https://github.com/kenzanlabs/conways-game-of-life.git
+```
+   
         
 4. cd into the folder where the files are located
    cd conways-game-of-life
    
 5. Create a virtual env. Only needs to be done once. (Skip, if you are running this in pythonanywhere)
+```
    python3 -m venv conwayV
+```
 
 5. Activate the virtual env. Will need to be done everytime you open a new terminal and come to this folder. (Skip, if you are running this in pythonanywhere)
+```
    source conwayV/bin/activate
+```
 
 6. Install urwid (Skip, if you are running this in pythonanywhere)
+```
    python3 -m pip install urwid
+```
    
 7. Run the program
+```
    python3 gol.py
+```
 
-If you are having trouble installing python your a computer, you can instead create a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/
-It already comes intalled with python3, git and urwid, so all that is required is 
-  1. **clone the repository:** git clone https://github.com/kenzanlabs/conways-game-of-life.git
-  2. **cd into the folder:**  cd conways-game-of-life
-  3. **Run the program:** python3 gol.py
+8. If you would like to change code. You will need to install a good code editor. I recommend https://code.visualstudio.com/?wt.mc_id=DX_841432
+
 
 ### Program Design
 
