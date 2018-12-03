@@ -20,6 +20,7 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
 Note this program may not run on windows
 
 1. First install Python3 . Python 3 can be download and installed from here https://www.python.org/downloads/
+   For more detailed instructions see: https://realpython.com/installing-python
 2. Download the code
    Code can be downloaded by either
    a) Downloading the code directly ()
@@ -32,11 +33,17 @@ Note this program may not run on windows
 3. cd into the folder where the files are located
    cd conways-game-of-life
    
-4. Install required libraries 
-   pip install urwid
+4. Create a virtual env. Only needs to be done once.
+   python3 -m venv conwayV
+
+5. Activate the virtual env. Will need to be done everytime you open a new terminal and come to this folder.
+   source conwayV/bin/activate
+
+6. Install urwid
+   python3 -m pip install urwid
    
-5. Run the program
-   python gol.py
+7. Run the program
+   python3 gol.py
 
 ### Program Design
 

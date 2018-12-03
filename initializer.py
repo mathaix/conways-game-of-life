@@ -22,6 +22,7 @@ class Toad(Initializer):
   def desc():
       return "Toad"
 
+
 class Behive(Initializer):
   def initialize(self):
       """ Randomly pick a point that fits the shape within the bounds of the Grid  """
