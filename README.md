@@ -20,6 +20,7 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
 (Note this program may not run on windows)
 
 1. Install Prequiste software
+
       **Python3:** Python3 can be download and installed from here https://www.python.org/downloads/
       For more detailed instructions see: https://realpython.com/installing-python
 
