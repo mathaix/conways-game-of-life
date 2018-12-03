@@ -60,14 +60,14 @@ Here are some ideas you can try:
 * **Change the colors or blocks in the program**
 
 
-* **Create other shapes**
+* **Create other shapes:** Take a look at the following articles for reference
 https://en.wikipedia.org/wiki/Still_life_(cellular_automaton)
 https://en.wikipedia.org/wiki/Oscillator_(cellular_automaton)
 
 
-* **Use a sparser memory structure**
+* **Use a sparser memory structure:**
 The current game uses a an array to store game state. This design uses a lot of memory if the board is large. 
-Instead, you could use a sparse memory structure to store state
+Instead, state could be stored in a sparse memory structure.
 
 ### Questions
 
