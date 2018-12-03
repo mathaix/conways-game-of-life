@@ -30,16 +30,19 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
       For instructions to install see https://www.atlassian.com/git/tutorials/install-git
 
 2. Instead of running the code on your computer, you can choose to run it on the cloud by creating a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/
-   It already comes installed with python3, git and urwid
+   It already comes installed with python3, git and urwid.
 
-3. Clone the repository:
+3. Clone the repository: 
+Open a terminal session and run
 ```
 git clone https://github.com/kenzanlabs/conways-game-of-life.git
 ```
    
         
 4. cd into the folder where the files are located
+```
    cd conways-game-of-life
+```
    
 5. Create a virtual env. Only needs to be done once. (Skip, if you are running this in pythonanywhere)
 ```
@@ -78,7 +81,7 @@ The program is made up of 3 files.
 
 This software is open source software. We hope that you will take this code, own it, change it and reshare with the community. 
 
-Here are some ideas you can try:
+Here are some ideas:
 
 * **Modify the rules to implement HighLife https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)**
 
