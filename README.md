@@ -40,12 +40,13 @@ Note this program may not run on windows
 
 ### Program Design
 
-The program consists of 3 files. 
-gol.py - This is the entry point of the program, it controls inputs from the user and is responsible for drawing the game on the terminal
+The program consists of 3 files.
 
-model.py - All the logic for applying the different Game of Life Rules and Keeping track of the state of each cell are managed here. 
+* **gol.py** - This is the entry point of the program, it controls inputs from the user and is responsible for drawing the game on the terminal
 
-initializer.py - Initializers contain different shapes, which can be used to initialize the Game of Life grid, when it starts up.
+* **model.py** - All the logic for applying the different Game of Life Rules and Keeping track of the state of each cell are managed here. 
+
+* **initializer.py** - Initializers contain different shapes, which can be used to initialize the Game of Life grid, when it starts up.
 
 ### Modifying the Program
 
@@ -53,21 +54,21 @@ This software is open source software. We hope that you will take this code, own
 
 Here are some ideas you can try:
 
-####  Modify the rules to implement HighLife https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)
+* **Modify the rules to implement HighLife https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)**
 
 
-#### Change the colors 
+* **Change the colors**
 
 Change the colors or blocks in the program
 
 
-#### Create other shapes
+* **Create other shapes**
 
 https://en.wikipedia.org/wiki/Still_life_(cellular_automaton)
 https://en.wikipedia.org/wiki/Oscillator_(cellular_automaton)
 
 
-#### Use a sparser memory structure
+* **Use a sparser memory structure**
 
 The current game uses a an array to store game state. This design uses a lot of memory if the board is large. 
 Instead, you could use a sparse memory structure to store state
