@@ -57,19 +57,15 @@ Here are some ideas you can try:
 * **Modify the rules to implement HighLife https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)**
 
 
-* **Change the colors**
-
-Change the colors or blocks in the program
+* **Change the colors or blocks in the program**
 
 
 * **Create other shapes**
-
 https://en.wikipedia.org/wiki/Still_life_(cellular_automaton)
 https://en.wikipedia.org/wiki/Oscillator_(cellular_automaton)
 
 
 * **Use a sparser memory structure**
-
 The current game uses a an array to store game state. This design uses a lot of memory if the board is large. 
 Instead, you could use a sparse memory structure to store state
 
