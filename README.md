@@ -30,7 +30,7 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
       For instructions to install see https://www.atlassian.com/git/tutorials/install-git
 
 2. Instead of running the code on your computer, you can choose to run it on the cloud by creating a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/
-   It already comes intalled with python3, git and urwid
+   It already comes installed with python3, git and urwid
 
 3. Clone the repository:
 ```
