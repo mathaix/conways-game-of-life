@@ -66,7 +66,7 @@ git clone https://github.com/kenzanlabs/conways-game-of-life.git
 
 ### Program Design
 
-The program consists of 3 files.
+The program is made up of 3 files.
 
 * **gol.py** - This is the entry point of the program, it controls inputs from the user and is responsible for drawing the game on the terminal
 
