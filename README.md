@@ -17,33 +17,43 @@ Read more about the game here https://en.wikipedia.org/wiki/Conway%27s_Game_of_L
 
 ### Running the Program
 
-Note this program may not run on windows
+(Note this program may not run on windows)
 
-1. First install Python3 . Python 3 can be download and installed from here https://www.python.org/downloads/
-   For more detailed instructions see: https://realpython.com/installing-python
-2. Download the code
-   Code can be downloaded by either
-   a) Downloading the code directly ()
-   
-   b) Cloning the repository. 
-      First Install git https://www.atlassian.com/git/tutorials/install-git
-      Clone the repository:
-        git clone https://github.com/kenzanlabs/conways-game-of-life.git
+1. Install Prequiste software
+      Python3: Python3 can be download and installed from here https://www.python.org/downloads/
+      For more detailed instructions see: https://realpython.com/installing-python
+
+      Git: 
+      Most systems already come installed with Git. 
+      To check if git is installed, open a terminal and type git. 
+      For instructions to install see https://www.atlassian.com/git/tutorials/install-git
+
+2. Instead of running the code on your computer, you can choose to run it on the cloud by creating a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/
+   It already comes intalled with python3, git and urwid
+
+3. Clone the repository:
+   git clone https://github.com/kenzanlabs/conways-game-of-life.git
         
-3. cd into the folder where the files are located
+4. cd into the folder where the files are located
    cd conways-game-of-life
    
-4. Create a virtual env. Only needs to be done once.
+5. Create a virtual env. Only needs to be done once. (Skip, if you are running this in pythonanywhere)
    python3 -m venv conwayV
 
-5. Activate the virtual env. Will need to be done everytime you open a new terminal and come to this folder.
+5. Activate the virtual env. Will need to be done everytime you open a new terminal and come to this folder. (Skip, if you are running this in pythonanywhere)
    source conwayV/bin/activate
 
-6. Install urwid
+6. Install urwid (Skip, if you are running this in pythonanywhere)
    python3 -m pip install urwid
    
 7. Run the program
    python3 gol.py
+
+If you are having trouble installing python your a computer, you can instead create a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/
+It already comes intalled with python3, git and urwid, so all that is required is 
+  1. **clone the repository:** git clone https://github.com/kenzanlabs/conways-game-of-life.git
+  2. **cd into the folder:**  cd conways-game-of-life
+  3. **Run the program:** python3 gol.py
 
 ### Program Design
 
